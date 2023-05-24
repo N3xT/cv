@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+div#main-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+div#main-wrapper #main-container {
+    gap: 20px;
+    display: flex;
+}
+div#main-wrapper #bottom-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div#main-wrapper video {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.profile-avatar {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.profile-avatar img {
+    border-radius: 50%;
+}
+
+.profile-info {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0px;
+}
+.profile-info h1 {
+    font-weight: 700;
+    margin: 0px;
+}
+.profile-info p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.social-info li {
+    display: inline;
+}
+.social-info ul {
+    margin: 0px;
+    padding: 0px;
+}
+.social-info a {
+    padding: 5px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+.social-info a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+button.rounded {
+    border: 2px solid white;
+    border-radius: 12rem;
+    color: white;
+    background-color: transparent;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+button.rounded:hover {
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+}
+
+.content-box {
+    display: flex;
+}
+.content-box.dark {
+    background-color: rgb(20, 20, 26);
+}
+.content-box.bright {
+    background-color: rgb(45, 45, 57);
+}
+.content-box .content {
+    padding: 50px;
+}
+.content-box h2, h3 {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.content-box p {
+    color: rgba(255, 255, 255, 0.75);
+}
+.content-box .title {
+    font-weight: 700;
+    display: flex;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-box .skills {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project {
+    display: flex;
+    margin-top: 30px;
+    gap: 70px;
+    padding: 50px;
+    background-color: rgb(45, 45, 57);
+    border-radius: 20px;
+}
+
+.circled-number {
+    color: white;
+    background-color: #aa0022;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em; 
+    height: 2em;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(45, 45, 57);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, .5);
+    font-weight: 400;
+    margin: 0;
+}
